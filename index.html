@@ -1,0 +1,562 @@
+<! doctype html>
+
+	<html>
+		<head>
+			<meta charset="utf-8">
+				<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+			<style>
+				@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+				@media only screen and (max-width: 600px) {
+					[class*="col-"] {
+  						width: 100%;
+			
+					}
+				
+				}
+				
+				html,body{
+				margin:0;
+				}
+
+
+				img{
+				max-width:100%;
+				}
+				
+				.answer{
+				border:1px solid black;
+				padding:20px;
+				}
+				
+				.main{
+				display:block;
+				
+				}
+				.second{
+				width:100%;
+			
+				
+				}
+
+				.third{
+				width:100%;
+				}
+				 h3{
+				text-align:center;
+				}
+				.text{
+				text-align:center;
+				
+				}
+				.twothing{
+				text-align:center;
+				}
+				.text{
+				margin-left:30px;		
+				margin-right:30px;
+					}
+				
+				.neupane{
+				height:250px;	
+				background-image:url("image/anomoney.jpg");
+				background-size:cover;
+				background-position:center;
+				}
+				.pic{
+				height:250px;
+				background-image:url("image/money.jpg");
+				background-size:cover;
+				background-position:center;
+				}
+				input{
+				width:100%;	
+				font-size:15px;
+				padding:10px;
+				border-top-left-radius:20px;
+				outline:none;
+				border-bottom-right-radius:20px;
+				background-color:#ffffffd4;
+				color:black;
+				border:none;
+				margin-top:100px;				
+			}
+
+
+				select{
+					width:150px;
+					padding:6px;
+					margin-top:20px;
+					margin-right:12px;
+					font-family: 'Roboto', sans-serif;
+					font-size:17px;
+					background-color:#ffffffd4;
+					color:black;
+					border:none;
+					outline:none;
+
+				}
+
+
+				::placeholder{
+				color:black;
+				text-align:center;
+				}
+				h3{
+				font-family: 'Roboto', sans-serif;
+				font-size:20px;
+				margin-top:30px;
+				}
+
+
+				button{
+				width:100px;
+				padding:6px;
+				font-family: 'Roboto', sans-serif;
+				font-size:17px;
+				background-color:#ffffffd4;
+				color:black;
+				border:none;
+				outline:none;
+
+				}
+
+
+
+				h3{
+				font-family: 'Roboto', sans-serif;
+				font-size:20px;
+				}
+				.cover{
+					display:none;
+					
+					top:0;
+					left:0;
+					font-family: 'Roboto', sans-serif;
+					font-size:20px;
+					width:100%;
+					height:100%;
+					background-color:#00000085;
+					color:white;
+					
+					animation-name:style;
+					animation-duration: .7s;
+					position:fixed;
+				
+				}
+				.cover .answer{
+				text-align:center;
+				margin-top:80%;
+				background-color:white;
+				color:black;
+				
+				}
+
+
+					@keyframes style{
+					0%{
+					opacity:0;
+					transform: rotateX(90deg);
+					}
+					100%{
+					opacity:1;
+					transform: rotateY(360deg);
+					}
+					}
+					.close{
+					font-size:20px;
+					padding:20px;
+					background-color:black;
+					float:right;
+					cursor:pointer;
+					}
+					.footer p{
+						text-align:center;
+						letter-spacing:1;
+						font-size:20px;
+						font-family: 'Roboto', sans-serif;			
+						
+						
+					}
+					.footer{
+					background-color:green;
+					color:white;
+					margin-top:10px;
+					padding:2px;
+					
+					}
+
+				@media only screen and (min-width: 768px) {
+ 
+ 	 			.col-1 {width: 8.33%;}
+ 	 			.col-2 {width: 16.66%;}
+ 	 			.col-3 {width: 25%;}
+ 	 			.col-4 {width: 33.33%;}
+ 	 			.col-5 {width: 41.66%;}
+ 	 			.col-6 {width: 50%;}
+ 	 			.col-7 {width: 58.33%;}
+ 	 			.col-8 {width: 66.66%;}
+	 			.col-9 {width: 75%;}
+	 			.col-10 {width: 83.33%;}
+ 	 			.col-11 {width: 91.66%;}
+	 			.col-12 {width: 100%;}
+					.header{
+						display:flex;
+						justify-content:space-around;
+						margin-top:2%;
+					}
+					.header .two{
+						display:block;
+					}
+					.main{
+					display:flex;
+					margin-left:4%;
+					margin-right:4%;
+					}
+					.second{
+					width:50%;
+					margin-right:4%;
+				
+					}
+
+				.third{
+				width:50%;
+				}
+				.cover .answer{
+				margin-top:20%;
+				}
+				.cover{
+				font-size:30px;
+				}
+				.footer{
+					background-color:green;
+					color:white;
+					margin-top:45px;
+					padding:12px;
+					
+					}
+				}
+				
+				
+			</style>
+
+		</head>
+
+		<body>
+			<div class="nav" col-s-12>
+				<img src="image/banner.png">
+			</div>	
+			
+
+			
+			<div class="main">
+				
+				<div class="second">
+
+					<div class="one">
+					
+						<h3> Nepali Currency to other Currency</h3>
+
+					</div>
+
+
+
+					<div class="neupane">
+					<div class="text">
+				
+						<input type="search" id="another" placeholder="enter a currency ......"><br>
+					</div>
+					
+					<div class="twothing">
+						<select id="get">
+
+								<option id="1">us$</option>
+								<option id="2">euro</option>
+								<option id="3">pound</option>
+								<option id="4">swissfrank</option>
+								<option id="5">austriliandollar</option>
+								<option id="6">canadiandollar</option>
+								<option id="7">singaporedollar</option>
+								<option id="8">japaneseyen</option>
+								<option id="9">chineseyuan</option>
+								<option id="10">saudiarabia</option>
+								<option id="11">southkorea</option>
+								<option id="12">hongkongdollar</option>
+
+						</select>
+
+						<button  onclick="another()">convert</button>
+
+					</div>
+					</div>
+
+				</div>
+
+
+
+
+				<div class="third">
+						<div class="two">
+							
+							<h3> Other Currency to Nepali Currency</h3>
+						</div>
+
+
+
+					<div class="pic">
+
+					<div class="text">
+				
+						<input type="search" id="rupee" placeholder="enter a currency ......"><br>
+					</div>
+
+					<div class="twothing">
+
+						<select id="choose">
+
+								<option id="1">us$</option>
+								<option id="2">euro</option>
+								<option id="3">pound</option>
+								<option id="4">swissfrank</option>
+								<option id="5">austriliandollar</option>
+								<option id="6">canadiandollar</option>
+								<option id="7">singaporedollar</option>
+								<option id="8">japaneseyen</option>
+								<option id="9">chineseyuan</option>
+								<option id="10">saudiarabia</option>
+								<option id="11">southkorea</option>
+								<option id="12">hongkongdollar</option>
+
+						</select>
+
+						<button id= "btn"  onclick="nepali()">convert rs</button>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+				
+	
+				<div class="cover">
+					    <span class="close">&times;</span>
+					<div class="answer">
+
+					</div>
+				</div>
+						
+		
+
+					<div class="footer">
+						<div class="new">
+						<p>&copy; All Reserved by Money conveter(javascript Ninjas group)</p>
+						
+						</div>
+					</div>
+
+	
+
+			<script>
+					 let money=[ 106.80, 113.64, 133.64, 106.65, 82.37, 81.94, 75.33, 9.40, 15.58, 28.48, 9.48, 13.76];
+					let anser=document.querySelector(".cover");
+					function another (){
+					document.querySelector(".cover").style.display="block";
+						document.querySelector(".close").onclick = function() {
+ 						 anser.style.display = "none";
+						}
+						window.onclick = function(event) {
+						  if (event.target ==anser ) {
+ 							   anser.style.display = "none";
+  						}
+
+						}
+ 					 let nepali = document.querySelector("#another").value;
+					 let country=document.querySelector("#get").value;
+
+  					if(country=="us$"){
+						simple=1/money[0]*nepali;
+						document.querySelector(".answer").innerText ="the "+nepali + " Rs = us$  "+simple;
+					}
+
+
+
+					else if(country=="euro"){
+						simple=1/money[1]*nepali;
+						document.querySelector(".answer").innerText ="the "+nepali + " Rs =euro   "+simple;
+					}
+
+
+					else if(country=="pound"){
+						simple=1/money[2]*nepali;
+			 			document.querySelector(".answer").innerText ="the "+nepali + " Rs =pound   "+simple;
+					}
+
+
+					else if(country=="swissfrank"){
+						simple=1/money[3]*nepali;
+						document.querySelector(".answer").innerText ="the "+nepali + " Rs =swissfrank   "+simple;
+					}
+
+
+					else if(country=="austriliandollar"){
+						simple=1/money[4]*nepali;
+			 			document.querySelector(".answer").innerText ="the "+nepali + " Rs =austriliandollar   "+simple;
+					}
+
+
+					else if(country=="canadiandollar"){
+						simple=1/money[5]*nepali;
+						document.querySelector(".answer").innerText ="the "+nepali + " Rs =canadiandollar   "+simple;
+					}
+
+
+					else if(country=="singaporedollar"){
+						simple=1/money[6]*nepali;
+						document.querySelector(".answer").innerText ="the "+nepali + " Rs =singaporedollar   "+simple;
+					}
+
+
+					else if(country=="japaneseyen"){
+						simple=1/money[7]*nepali;
+			 			document.querySelector(".answer").innerText ="the "+nepali + " Rs =japaneseyen   "+simple;
+					}
+
+
+					else if(country=="chineseyuan"){
+						simple=1/money[8]*nepali;
+			 			document.querySelector(".answer").innerText ="the "+nepali + " Rs =chineseyuan   "+simple;
+					}
+
+
+
+					else if(country=="saudiarabia"){
+						simple=1/money[9]*nepali;
+			 			document.querySelector(".answer").innerText ="the "+nepali + " Rs =saudiarabia   "+simple;
+					}
+
+
+					else if(country=="southkorea"){
+						simple=money[10]*nepali;
+						document.querySelector(".answer").innerText ="the "+nepali + " Rs =southkorea   "+simple;
+					}
+
+
+					else{
+			
+						simple=1/money[11]*nepali;
+			 			document.querySelector(".answer").innerText ="the "+nepali + " Rs =hongkongdollar   "+simple;
+			
+					}
+
+
+
+  
+  			}
+
+		 function nepali(){
+				document.querySelector(".cover").style.display="block";	
+						document.querySelector(".close").onclick = function() {
+ 						 anser.style.display = "none";
+						}
+						let anser=document.querySelector(".cover");
+						window.onclick = function(event) {
+						  if (event.target ==anser ) {
+ 							   anser.style.display = "none";
+  						}
+
+						}
+		let nepali = document.querySelector("#rupee").value;
+		let country=document.querySelector("#choose").value;
+		let simple=0;
+
+  		if(country=="us$"){
+			simple=money[0]*nepali;
+			  document.querySelector(".answer").innerText ="the "+nepali + " us$ = Rs"+ simple;
+		}
+
+
+  		else if(country=="euro"){
+			simple=money[1]*nepali;
+			  document.querySelector(".answer").innerText ="the "+nepali + "euro  = Rs" + simple;
+		}
+
+
+		else if(country=="pound"){
+			simple=money[2]*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "pound  = Rs"+simple;
+		}
+
+
+		else if(country=="swissfrank"){
+			simple=money[3]*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "swissfrank  = Rs"+simple;
+		}
+
+
+		else if(country=="austriliandollar"){
+			simple=money[4]*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "austriliandollar  = Rs"+simple;
+		}
+
+
+		else if(country=="canadiandollar"){
+			simple=money[5]*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "canadiandollar  = Rs"+simple;
+		}
+
+
+		else if(country=="singaporedollar"){
+			simple=money[6]*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "singaporedollar  = Rs"+simple;
+		}
+
+
+		else if(country=="japaneseyen"){
+			simple=(money[7]/10)*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "japaneseyen  = Rs"+simple;
+		}
+
+
+		else if(country=="chineseyuan"){
+			simple=money[8]*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "chineseyuan  = Rs"+simple;
+		}
+
+
+		else if(country=="saudiarabia"){
+			simple=money[9]*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "saudiarabia  = Rs"+simple;
+		}
+
+
+		else if(country=="southkorea"){
+			simple=(money[10]/100)*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "southkorea  = Rs"+simple;
+		}
+
+
+		else{
+			simple=money[11]*nepali;
+			 document.querySelector(".answer").innerText ="the "+nepali + "hongkongdollar  = Rs"+simple;
+		}
+
+
+
+
+		}
+
+
+
+
+	</script>
+
+
+
+
+
+		</body>
+		
+	</html>
